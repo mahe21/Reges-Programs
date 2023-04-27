@@ -13,9 +13,9 @@ namespace RegexExamples
         {
             Console.WriteLine("Enter Pincode: ");
             string pinCode = Console.ReadLine();
-            string PincodeRegex = "^[0-9]{6}$";
+            string PincodeRegexNumeric = "^[0-9]{6}$";
 
-            if(Regex.IsMatch(pinCode, PincodeRegex))
+            if(Regex.IsMatch(pinCode, PincodeRegexNumeric))
             {
                 Console.WriteLine("Valid pincode.");
             }
